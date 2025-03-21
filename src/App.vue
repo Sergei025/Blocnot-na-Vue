@@ -117,23 +117,22 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
   list-style-type: none;
   font-size: 17px;
+  padding: 0;
 }
 li {
-  display: flex;
+  width: 100%;
   padding-left: 5px;
   cursor: pointer;
   border-bottom: 1px solid #ccc;
-  white-space: nowrap; 
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal; 
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
 }
 li:hover {
   background-color: #ddd;
 }
-a {
+li a {
   font-size: 16px;
-  margin-left: 220px;
-  position: fixed;
 }
 p {
   margin-top: 10px;
