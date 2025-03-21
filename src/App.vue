@@ -120,19 +120,20 @@ ul {
   padding: 0;
 }
 li {
-  width: 100%;
+  display: flex;
   padding-left: 5px;
   cursor: pointer;
   border-bottom: 1px solid #ccc;
-  white-space: normal; 
-  word-wrap: break-word;
-  overflow-wrap: break-word; 
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 li:hover {
   background-color: #ddd;
 }
-li a {
-  font-size: 16px;
+a {
+  margin-left: 220px;
+  position: fixed;
 }
 p {
   margin-top: 10px;
